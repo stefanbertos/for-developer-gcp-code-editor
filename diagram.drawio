@@ -1,4 +1,4 @@
-<mxfile modified="2022-03-23T17:25:08.507Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="c0AuW0KXHCyokNTT_giC" version="16.6.3" type="github">
+<mxfile modified="2022-03-23T17:30:05.010Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="KqhQRMjCJ7mDTc_THH7L" version="16.6.3" type="github">
   <diagram id="f106602c-feb2-e66a-4537-3a34d633f6aa" name="Page-1">
     <mxGraphModel dx="1408" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -30,7 +30,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ekCEzwZPr6Ho22CTsnSj-990" value="" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;" vertex="1" parent="1">
-          <mxGeometry x="440.00000000000006" y="343" width="410" height="71" as="geometry" />
+          <mxGeometry x="440.00000000000006" y="343" width="410" height="81" as="geometry" />
         </mxCell>
         <mxCell id="ekCEzwZPr6Ho22CTsnSj-991" value="Cloud External&#xa;IP Addresses" style="sketch=0;dashed=0;connectable=0;html=1;fillColor=#5184F3;strokeColor=none;shape=mxgraph.gcp2.hexIcon;prIcon=cloud_external_ip_addresses;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontColor=#999999;fontSize=12;" vertex="1" parent="ekCEzwZPr6Ho22CTsnSj-990">
           <mxGeometry y="0.5" width="44" height="39" relative="1" as="geometry">
@@ -38,7 +38,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="14" value="&lt;b&gt;Google &lt;/b&gt;Cloud Platform" style="fillColor=#F6F6F6;strokeColor=none;shadow=0;gradientColor=none;fontSize=14;align=left;spacing=10;fontColor=#717171;9E9E9E;verticalAlign=top;spacingTop=-4;fontStyle=0;spacingLeft=40;html=1;" parent="ekCEzwZPr6Ho22CTsnSj-990" vertex="1">
-          <mxGeometry x="-110" y="-260" width="520" height="331" as="geometry" />
+          <mxGeometry x="-110" y="-260" width="520" height="341" as="geometry" />
         </mxCell>
         <mxCell id="15" value="" style="shape=mxgraph.gcp2.google_cloud_platform;fillColor=#F6F6F6;strokeColor=none;shadow=0;gradientColor=none;" parent="14" vertex="1">
           <mxGeometry width="23" height="20" relative="1" as="geometry">
@@ -97,6 +97,14 @@
           <mxGeometry x="18.999999999999943" y="221" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ekCEzwZPr6Ho22CTsnSj-993" value="Cloud External&#xa;IP Addresses" style="sketch=0;dashed=0;connectable=0;html=1;fillColor=#5184F3;strokeColor=none;shape=mxgraph.gcp2.hexIcon;prIcon=cloud_external_ip_addresses;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontColor=#999999;fontSize=12;" vertex="1" parent="ekCEzwZPr6Ho22CTsnSj-992">
+          <mxGeometry y="0.5" width="44" height="39" relative="1" as="geometry">
+            <mxPoint x="5" y="-19.5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ekCEzwZPr6Ho22CTsnSj-996" value="" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;" vertex="1" parent="14">
+          <mxGeometry x="345.99999999999994" y="281" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ekCEzwZPr6Ho22CTsnSj-997" value="&lt;font color=&quot;#000000&quot;&gt;Cloud Domain&lt;/font&gt;&lt;br&gt;Cloud  DNS" style="sketch=0;dashed=0;connectable=0;html=1;fillColor=#5184F3;strokeColor=none;shape=mxgraph.gcp2.hexIcon;prIcon=cloud_dns;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontColor=#999999;fontSize=12;" vertex="1" parent="ekCEzwZPr6Ho22CTsnSj-996">
           <mxGeometry y="0.5" width="44" height="39" relative="1" as="geometry">
             <mxPoint x="5" y="-19.5" as="offset" />
           </mxGeometry>
