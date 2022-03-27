@@ -1,4 +1,4 @@
-<mxfile modified="2022-03-27T13:46:09.102Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="1Lq8r6dKT2-5yZOxAieZ" version="17.2.1" type="github">
+<mxfile modified="2022-03-27T13:48:31.283Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="36NdcvlPORKnSdgmmckH" version="17.2.1" type="github">
   <diagram id="f106602c-feb2-e66a-4537-3a34d633f6aa" name="Page-1">
     <mxGraphModel dx="1422" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -86,7 +86,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="DUQV_nNhBPcRGy0pp927-1005" value="" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;" parent="14" vertex="1">
-          <mxGeometry x="640" y="115" width="150" height="60" as="geometry" />
+          <mxGeometry x="640" y="115" width="150" height="65" as="geometry" />
         </mxCell>
         <mxCell id="DUQV_nNhBPcRGy0pp927-1006" value="Compute&#xa;Engine" style="sketch=0;dashed=0;connectable=0;html=1;fillColor=#5184F3;strokeColor=none;shape=mxgraph.gcp2.hexIcon;prIcon=compute_engine;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontColor=#999999;fontSize=12;" parent="DUQV_nNhBPcRGy0pp927-1005" vertex="1">
           <mxGeometry y="0.5" width="44" height="39" relative="1" as="geometry">
@@ -95,6 +95,9 @@
         </mxCell>
         <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-1017" value="e2-small" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="DUQV_nNhBPcRGy0pp927-1005">
           <mxGeometry x="90" y="-5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-1025" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/operating-system-flat-1/30/ubuntu-128.png;fontSize=12;" vertex="1" parent="DUQV_nNhBPcRGy0pp927-1005">
+          <mxGeometry x="100" y="15" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-1004" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.562;entryY=1.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="14" source="DUQV_nNhBPcRGy0pp927-1007" target="DUQV_nNhBPcRGy0pp927-1005">
           <mxGeometry relative="1" as="geometry" />
@@ -169,6 +172,22 @@
         </mxCell>
         <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-1020" value="update records" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="180" y="80" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-1023" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontSize=12;" edge="1" parent="1" source="ZYMqUd0jCcoyJiXl-_xQ-1022" target="DUQV_nNhBPcRGy0pp927-1005">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="920" y="388" />
+              <mxPoint x="920" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-1024" value="managed boot install script: https://github.com/coder/code-server/blob/main/install.sh" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="ZYMqUd0jCcoyJiXl-_xQ-1023">
+          <mxGeometry x="-0.2773" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-1022" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.github;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="350" width="75" height="75" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
