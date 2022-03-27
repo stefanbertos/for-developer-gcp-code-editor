@@ -1,4 +1,4 @@
-<mxfile modified="2022-03-27T13:51:41.378Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="z3CZWzig8PM_9E9tbX4X" version="17.2.1" type="github">
+<mxfile modified="2022-03-27T14:33:27.542Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="9b55E5DxVq-SFPt_C6Jb" version="17.2.1" type="github">
   <diagram id="f106602c-feb2-e66a-4537-3a34d633f6aa" name="Page-1">
     <mxGraphModel dx="1422" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -18,7 +18,7 @@
         <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-988" value="User" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="215" y="270" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="14" value="&lt;b&gt;Google &lt;/b&gt;Cloud Platform" style="fillColor=#F6F6F6;strokeColor=none;shadow=0;gradientColor=none;fontSize=14;align=left;spacing=10;fontColor=#717171;9E9E9E;verticalAlign=top;spacingTop=-4;fontStyle=0;spacingLeft=40;html=1;" parent="1" vertex="1">
+        <mxCell id="14" value="&lt;b&gt;Google &lt;/b&gt;Cloud Platform" style="fillColor=#F6F6F6;strokeColor=#CCCCCC;shadow=0;gradientColor=none;fontSize=14;align=left;spacing=10;fontColor=#717171;9E9E9E;verticalAlign=top;spacingTop=-4;fontStyle=0;spacingLeft=40;html=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="300" y="90" width="860" height="370" as="geometry" />
         </mxCell>
         <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-1006" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="14">
