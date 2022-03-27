@@ -1,4 +1,4 @@
-<mxfile modified="2022-03-27T13:31:55.987Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="uaj9uETmu1RtrCuZTRcT" version="17.2.1" type="github">
+<mxfile modified="2022-03-27T13:32:06.016Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="Dq9eiw56wjSughIwFpsM" version="17.2.1" type="github">
   <diagram id="f106602c-feb2-e66a-4537-3a34d633f6aa" name="Page-1">
     <mxGraphModel dx="1422" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -17,14 +17,6 @@
         </mxCell>
         <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-988" value="User" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="215" y="270" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ekCEzwZPr6Ho22CTsnSj-996" value="" style="strokeColor=#dddddd;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;" parent="1" vertex="1">
-          <mxGeometry x="670" y="470" width="130" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ekCEzwZPr6Ho22CTsnSj-997" value="&lt;font color=&quot;#000000&quot;&gt;Cloud Domain&lt;/font&gt;&lt;br&gt;Cloud  DNS" style="sketch=0;dashed=0;connectable=0;html=1;fillColor=#5184F3;strokeColor=none;shape=mxgraph.gcp2.hexIcon;prIcon=cloud_dns;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontColor=#999999;fontSize=12;" parent="ekCEzwZPr6Ho22CTsnSj-996" vertex="1">
-          <mxGeometry y="0.5" width="44" height="39" relative="1" as="geometry">
-            <mxPoint x="5" y="-19.5" as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="14" value="&lt;b&gt;Google &lt;/b&gt;Cloud Platform" style="fillColor=#F6F6F6;strokeColor=none;shadow=0;gradientColor=none;fontSize=14;align=left;spacing=10;fontColor=#717171;9E9E9E;verticalAlign=top;spacingTop=-4;fontStyle=0;spacingLeft=40;html=1;" parent="1" vertex="1">
           <mxGeometry x="300" y="90" width="860" height="370" as="geometry" />
