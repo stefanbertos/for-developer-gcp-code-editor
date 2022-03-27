@@ -1,4 +1,4 @@
-<mxfile modified="2022-03-27T13:32:47.764Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="3wdTIbYQ73lon00lKT2Y" version="17.2.1" type="github">
+<mxfile modified="2022-03-27T13:34:10.625Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="4SwxMM2iy1VEXDI0WxwH" version="17.2.1" type="github">
   <diagram id="f106602c-feb2-e66a-4537-3a34d633f6aa" name="Page-1">
     <mxGraphModel dx="1422" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -131,6 +131,15 @@
         </mxCell>
         <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-1009" value="Instance group" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="14">
           <mxGeometry x="790" y="150" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-1014" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.885;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="14" source="ZYMqUd0jCcoyJiXl-_xQ-1013" target="ZYMqUd0jCcoyJiXl-_xQ-991">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-1013" value="" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Certificate.svg;" vertex="1" parent="14">
+          <mxGeometry x="130" y="29" width="50" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-1015" value="Google certificate" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="14">
+          <mxGeometry x="160" y="71" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ZYMqUd0jCcoyJiXl-_xQ-993" value="https" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="987" target="ZYMqUd0jCcoyJiXl-_xQ-991">
           <mxGeometry relative="1" as="geometry" />
