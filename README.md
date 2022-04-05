@@ -14,3 +14,5 @@ gcloud compute instances create-with-container code-editor-vm --container-image 
 
 
 https://cloud.google.com/container-optimized-os/docs/how-to/create-configure-instance#gcloud
+
+https://cloud.google.com/iap/docs/tutorial-gce
