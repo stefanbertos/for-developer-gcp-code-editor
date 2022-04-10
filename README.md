@@ -61,3 +61,26 @@ sudo code-server --install-extension pivotal.vscode-spring-boot
 sudo code-server --install-extension pivotal.vscode-boot-dev-pack
 sudo code-server --install-extension vscjava.vscode-spring-initializr
 sudo code-server --install-extension vscjava.vscode-spring-boot-dashboard
+
+- network endpoint
+- load balancer http
+- load balancer https
+
+check terrafom load balancers - github
+
+https://cloud.google.com/load-balancing/docs/https
+
+https://cloud.google.com/load-balancing/docs/backend-service
+https://cloud.google.com/load-balancing/docs/negs#zonal-neg
+https://cloud.google.com/load-balancing/docs/health-checks#gcloud_10
+
+gcloud compute health-checks create
+gcloud compute health-checks describe
+
+gcloud compute health-checks list --global
+gcloud compute health-checks list --regions=REGION_LIST
+gcloud compute health-checks describe NAME --global
+gcloud compute health-checks describe NAME --region=REGION
+
+gcloud compute backend-services get-health NAME --global --format=get(name, healthStatus)
+gcloud compute backend-services get-health NAME --region=REGION --format=get(name, healthStatus)
