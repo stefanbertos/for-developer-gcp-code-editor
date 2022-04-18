@@ -1,19 +1,3 @@
-/**
- * Copyright 2017 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 provider "google" {
   project = var.project
 }
@@ -50,8 +34,7 @@ module "cloud-nat" {
   name       = "code-editor-nat"
 }
 
-/*
-data "template_file" "group-startup-script" {
+data "template_file" "instance-startup-script" {
   template = file(format("%s/gceme.sh.tpl", path.module))
 
   vars = {
@@ -68,12 +51,17 @@ module "mig_template" {
     email  = ""
     scopes = ["cloud-platform"]
   }
-  name_prefix    = var.network_name
-  startup_script = data.template_file.group-startup-script.rendered
+  name_prefix    = "code-editor-instance-template"
+  startup_script = data.template_file.instance-startup-script.rendered
+  source_image_family  = "ubuntu-2004-lts"
+  source_image_project = "ubuntu-os-cloud"
   tags = [
     var.network_name,
     module.cloud-nat.router_name
   ]
+  disk_size_gb = 20
+  disk_type = "pd-ssd"
+  machine_type = "e2-medium"
 }
 
 module "mig" {
@@ -82,6 +70,7 @@ module "mig" {
   instance_template = module.mig_template.self_link
   region            = var.region
   hostname          = var.network_name
+  mig_name              = "code-editor-instance-group"
   target_size       = 2
   named_ports = [{
     name = "http",
@@ -91,11 +80,10 @@ module "mig" {
   subnetwork = google_compute_subnetwork.default.self_link
 }
 
-# [START cloudloadbalancing_ext_http_gce_http_redirect]
 module "gce-lb-http" {
   source               = "GoogleCloudPlatform/lb-http/google"
   version              = "~> 5.1"
-  name                 = "ci-https-redirect"
+  name                 = "code-editor-https-load-balancer"
   project              = var.project
   target_tags          = [var.network_name]
   firewall_networks    = [google_compute_network.default.name]
@@ -110,7 +98,7 @@ module "gce-lb-http" {
       protocol                        = "HTTP"
       port                            = 80
       port_name                       = "http"
-      timeout_sec                     = 10
+      timeout_sec                     = 60
       connection_draining_timeout_sec = null
       enable_cdn                      = false
       security_policy                 = null
@@ -158,4 +146,3 @@ module "gce-lb-http" {
     }
   }
 }
-*/
