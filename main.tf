@@ -62,6 +62,9 @@ module "mig_template" {
   disk_size_gb = 20
   disk_type = "pd-ssd"
   machine_type = "e2-medium"
+  metadata = {
+      serial-port-enable = "TRUE"
+  }
 }
 
 module "mig" {

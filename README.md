@@ -63,5 +63,5 @@ gcloud config get-value project
 export GOOGLE_PROJECT=for-developers-343319
 
 terraform init
-terraform apply
+terraform apply 
 terraform destroy
