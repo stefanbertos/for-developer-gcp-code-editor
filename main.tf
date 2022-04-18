@@ -149,3 +149,6 @@ module "gce-lb-http" {
     }
   }
 }
+
+enable iap and config and test user
+then generate real certificate for my domain
