@@ -101,7 +101,7 @@ module "gce-lb-http" {
       protocol                        = "HTTP"
       port                            = 80
       port_name                       = "http"
-      timeout_sec                     = 120
+      timeout_sec                     = 300
       connection_draining_timeout_sec = null
       enable_cdn                      = false
       security_policy                 = null
@@ -111,9 +111,9 @@ module "gce-lb-http" {
       custom_response_headers         = null
 
       health_check = {
-        check_interval_sec  = 120
-        timeout_sec         = 60
-        healthy_threshold   = 3
+        check_interval_sec  = 300
+        timeout_sec         = 300
+        healthy_threshold   = 1
         unhealthy_threshold = 3
         request_path        = "/"
         port                = 80
@@ -129,8 +129,8 @@ module "gce-lb-http" {
       groups = [
         {
           group                        = module.mig.instance_group
-          balancing_mode               = null
-          capacity_scaler              = null
+          balancing_mode               = "UTILIZATION"
+          capacity_scaler              = 1.0
           description                  = null
           max_connections              = null
           max_connections_per_instance = null
