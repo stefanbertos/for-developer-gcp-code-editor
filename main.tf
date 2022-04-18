@@ -101,7 +101,7 @@ module "gce-lb-http" {
       protocol                        = "HTTP"
       port                            = 80
       port_name                       = "http"
-      timeout_sec                     = 60
+      timeout_sec                     = 120
       connection_draining_timeout_sec = null
       enable_cdn                      = false
       security_policy                 = null
@@ -111,10 +111,10 @@ module "gce-lb-http" {
       custom_response_headers         = null
 
       health_check = {
-        check_interval_sec  = null
-        timeout_sec         = null
-        healthy_threshold   = null
-        unhealthy_threshold = null
+        check_interval_sec  = 120
+        timeout_sec         = 60
+        healthy_threshold   = 3
+        unhealthy_threshold = 3
         request_path        = "/"
         port                = 80
         host                = null
