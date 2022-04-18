@@ -23,9 +23,10 @@ variable "zone" {
 }
 
 variable "network_name" {
-  default = "tf-lb-https-redirect-nat"
+  default = "code-editor-network"
 }
 
 variable "project" {
   type = string
+  default = "for-developers-343319"
 }

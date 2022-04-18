@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+/*
 output "load-balancer-ip" {
   value = module.gce-lb-http.external_ip
 }
@@ -26,4 +26,4 @@ output "load-balancer-ipv6" {
 output "backend_services" {
   sensitive = true
   value     = module.gce-lb-http.backend_services
-}
+}*/

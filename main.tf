@@ -36,7 +36,7 @@ resource "google_compute_subnetwork" "default" {
 }
 
 resource "google_compute_router" "default" {
-  name    = "lb-https-redirect-router"
+  name    = "code-editor-router"
   network = google_compute_network.default.self_link
   region  = var.region
 }
@@ -47,9 +47,10 @@ module "cloud-nat" {
   router     = google_compute_router.default.name
   project_id = var.project
   region     = var.region
-  name       = "cloud-nat-lb-https-redirect"
+  name       = "code-editor-nat"
 }
 
+/*
 data "template_file" "group-startup-script" {
   template = file(format("%s/gceme.sh.tpl", path.module))
 
@@ -157,3 +158,4 @@ module "gce-lb-http" {
     }
   }
 }
+*/

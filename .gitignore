@@ -21,3 +21,4 @@ bin-release/
 *.hcl
 *.info
 .terraform
+/terraform.tfstate.backup
