@@ -114,16 +114,16 @@ module "gce-lb-http" {
         check_interval_sec  = 300
         timeout_sec         = 300
         healthy_threshold   = 1
-        unhealthy_threshold = 3
-        request_path        = "/"
+        unhealthy_threshold = 5
+        request_path        = "/healthz"
         port                = 80
         host                = null
-        logging             = null
+        logging             = true
       }
 
       log_config = {
-        enable      = false
-        sample_rate = null
+        enable      = true
+        sample_rate = 1.0
       }
 
       groups = [
