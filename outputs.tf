@@ -11,3 +11,17 @@ output "backend_services" {
   sensitive = true
   value     = module.gce-lb-http.backend_services
 }
+
+output "certificate-id" {
+  value = google_compute_managed_ssl_certificate.default.certificate_id
+}
+
+output "certificate-cn" {
+  value = google_compute_managed_ssl_certificate.default.subject_alternative_names
+}
+
+output "certificate-expire-time" {
+  value = google_compute_managed_ssl_certificate.default.expire_time
+}
+
+

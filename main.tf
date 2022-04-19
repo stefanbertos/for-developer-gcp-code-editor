@@ -74,13 +74,21 @@ module "mig" {
   region            = var.region
   hostname          = var.network_name
   mig_name              = "code-editor-instance-group"
-  target_size       = 2
+  target_size       = 1
   named_ports = [{
     name = "http",
     port = 80
   }]
   network    = google_compute_network.default.self_link
   subnetwork = google_compute_subnetwork.default.self_link
+}
+
+resource "google_compute_managed_ssl_certificate" "default" {
+  name = "code-editor-cert"
+
+  managed {
+    domains = ["fordevelopers.org"]
+  }
 }
 
 module "gce-lb-http" {
@@ -91,7 +99,7 @@ module "gce-lb-http" {
   target_tags          = [var.network_name]
   firewall_networks    = [google_compute_network.default.name]
   ssl                  = true
-  ssl_certificates     = [google_compute_ssl_certificate.example.self_link]
+  ssl_certificates     = [google_compute_managed_ssl_certificate.default.self_link]
   use_ssl_certificates = true
   https_redirect       = true
 
@@ -118,11 +126,11 @@ module "gce-lb-http" {
         request_path        = "/healthz"
         port                = 80
         host                = null
-        logging             = true
+        logging             = false
       }
 
       log_config = {
-        enable      = true
+        enable      = false
         sample_rate = 1.0
       }
 
@@ -142,7 +150,7 @@ module "gce-lb-http" {
         }
       ]
       iap_config = {
-        enable               = false
+        enable               = true
         oauth2_client_id     = ""
         oauth2_client_secret = ""
       }
@@ -150,5 +158,5 @@ module "gce-lb-http" {
   }
 }
 
-enable iap and config and test user
-then generate real certificate for my domain
+#manual stuff - add dns record to name.com and enable iap for external users which is not possible via terraform
+#disk which will persist
