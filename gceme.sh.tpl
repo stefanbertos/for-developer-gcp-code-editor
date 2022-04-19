@@ -7,9 +7,6 @@ sudo apt-get update -y
 sudo apt-get install -y openjdk-11-jdk
 sudo apt-get install -y nodejs
 sudo apt-get install -y npm
-#sudo fsck.ext4 -tvy /dev/sdb
-#sudo mkdir -p /home/projects
-#sudo mount -t ext4 -O discard,defaults /dev/sdb /home/projects
 sudo wget https://github.com/coder/code-server/releases/download/v4.2.0/code-server-4.2.0-linux-amd64.tar.gz
 sudo tar -xvzf code-server-4.2.0-linux-amd64.tar.gz
 sudo cp -r code-server-4.2.0-linux-amd64 /usr/lib/code-server
@@ -21,7 +18,6 @@ sudo echo "[Service]" >> /lib/systemd/system/code-server.service
 sudo echo "Type=simple" >> /lib/systemd/system/code-server.service
 sudo echo "Environment=PASSWORD=secure-password" >> /lib/systemd/system/code-server.service
 sudo echo "ExecStart=/usr/bin/code-server --bind-addr 0.0.0.0:80 --auth password" >> /lib/systemd/system/code-server.service
-#sudo echo "ExecStart=/usr/bin/code-server --bind-addr 0.0.0.0:80 --user-data-dir /home/projects --auth password" >> /lib/systemd/system/code-server.service
 sudo echo "Restart=always" >> /lib/systemd/system/code-server.service
 sudo echo "[Install]" >> /lib/systemd/system/code-server.service
 sudo echo "WantedBy=multi-user.target" >> /lib/systemd/system/code-server.service

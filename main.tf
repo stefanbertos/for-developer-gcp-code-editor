@@ -126,11 +126,11 @@ module "gce-lb-http" {
         request_path        = "/healthz"
         port                = 80
         host                = null
-        logging             = false
+        logging             = true
       }
 
       log_config = {
-        enable      = false
+        enable      = true
         sample_rate = 1.0
       }
 
@@ -150,13 +150,11 @@ module "gce-lb-http" {
         }
       ]
       iap_config = {
-        enable               = true
+        enable               = false
         oauth2_client_id     = ""
         oauth2_client_secret = ""
       }
     }
   }
 }
-
 #manual stuff - add dns record to name.com and enable iap for external users which is not possible via terraform
-#disk which will persist

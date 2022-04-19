@@ -23,5 +23,3 @@ output "certificate-cn" {
 output "certificate-expire-time" {
   value = google_compute_managed_ssl_certificate.default.expire_time
 }
-
-
