@@ -1,4 +1,5 @@
 # Step by step Guide
+![diagram](diagram.drawio.png?raw=true "Title")
 1. Install Cloud SDK -> go to https://cloud.google.com/sdk/docs/install
 2. Authenticate with GCP
 ```
