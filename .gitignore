@@ -22,4 +22,3 @@ bin-release/
 *.info
 .terraform
 /terraform.tfstate.backup
-/terraform.d/plugins/registry.namedotcom.local/namedotcom/namedotcom/1.1.1/windows_amd64/terraform-provider-namedotcom.exe
