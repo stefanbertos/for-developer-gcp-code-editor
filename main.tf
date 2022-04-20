@@ -63,7 +63,7 @@ module "mig_template" {
   disk_type = "pd-ssd"
   machine_type = "e2-medium"
   metadata = {
-      serial-port-enable = "TRUE"
+      serial-port-enable = "FALSE"
   }
 }
 
@@ -87,7 +87,7 @@ resource "google_compute_managed_ssl_certificate" "default" {
   name = "code-editor-cert"
 
   managed {
-    domains = ["fordevelopers.org"]
+    domains = [var.domain_name]
   }
 }
 
@@ -126,11 +126,11 @@ module "gce-lb-http" {
         request_path        = "/healthz"
         port                = 80
         host                = null
-        logging             = true
+        logging             = false
       }
 
       log_config = {
-        enable      = true
+        enable      = false
         sample_rate = 1.0
       }
 
@@ -157,4 +157,15 @@ module "gce-lb-http" {
     }
   }
 }
-#manual stuff - add dns record to name.com and enable iap for external users which is not possible via terraform
+
+provider "namedotcom" {
+  token = var.name_com_token
+  username = var.name_com_username
+}
+
+resource "namedotcom_record" "foo" {
+  domain_name = var.domain_name
+  record_type = "A"
+  answer = module.gce-lb-http.external_ip
+}
+#manual stuff - enable iap for external users which is not possible via terraform
