@@ -126,11 +126,11 @@ module "gce-lb-http" {
         request_path        = "/healthz"
         port                = 80
         host                = null
-        logging             = false
+        logging             = true
       }
 
       log_config = {
-        enable      = false
+        enable      = true
         sample_rate = 1.0
       }
 
